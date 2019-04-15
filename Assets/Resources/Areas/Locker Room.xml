@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Area Place="Locker Room" Width="11" Height="11">
+  <Tiles>
+	<Tile Type="Ground" Walkable="True" />
+	<!-- South Row -->
+	<Tile Type="Empty" Row="0" Walkable="False" />
+	<Tile Type="Ground" X="1" Y="0" Walkable="True" />
+	<Tile Type="Ground" X="3" Y="0" Walkable="True" />
+	<Tile Type="Ground" X="5" Y="0" Walkable="True" />
+	<Tile Type="Ground" Fill="Row" Row="0" Start="7" End="8" Walkable="True" />
+	<!-- West Wall -->
+	<Tile Type="Empty" Column="0" Walkable="False" />
+	<!-- North Wall -->
+	<Tile Type="Empty" Row="10" Walkable="False" />
+	<!-- East Wall -->
+	<Tile Type="Empty" Column="10" Walkable="False" />
+  </Tiles>
+  <Characters>
+	<!--<Hero Name="Cecil" Sprite="Hero" X="2" Y="1" /> -->
+	<NPCs>
+	</NPCs> 
+  </Characters>
+  <Fixtures>
+	<Doors>
+		<Door ID="0" Type="EXIT" Sprite="NONE" X="1" Y="0" LinkToArea="Lobby" LinkToDoor="0" ExitX="1" ExitY="1" />
+		<Door ID="1" Type="EXIT" Sprite="NONE" X="3" Y="0" LinkToArea="Lobby" LinkToDoor="1" ExitX="3" ExitY="1" />
+		<Door ID="2" Type="EXIT" Sprite="NONE" X="5" Y="0" LinkToArea="Lobby" LinkToDoor="2" ExitX="5" ExitY="1" />
+		<Door ID="3" Type="EXIT" Sprite="NONE" X="7" Y="0" LinkToArea="Lobby" LinkToDoor="3" ExitX="7.5" ExitY="1" />
+		<Door ID="4" Type="EXIT" Sprite="NONE" X="8" Y="0" LinkToArea="Lobby" LinkToDoor="3" ExitX="7.5" ExitY="1" />
+	</Doors>
+	<Containers>
+		<!-- Back Row -->
+		<Container Sprite="Locker" X="1" Y="9" State="Closed" >
+			<Loot Money="100" >
+				<Item Type="Sandwich" Amount="1" />
+			</Loot> 
+		</Container>
+		<Container Sprite="Locker" X="2" Y="9" State="Closed" >
+			<Loot Money="100" >
+				<Item Type="Sandwich" Amount="1" />
+			</Loot> 
+		</Container>
+		<Container Sprite="Locker" X="3" Y="9" State="Closed" >
+			<Loot Money="200">
+				<Item Type="Overalls" Amount="1" />
+				<Item Type="Hammer" Amount="1" />
+			</Loot>
+		</Container>
+		<Container Sprite="File Cabinet" X="4" Y="9" State="Closed" >
+			<Loot Money="100">
+				<Item Type="Sandwich" Amount="3" />
+			</Loot>
+		</Container>
+		<Container Sprite="NONE" X="5" Y="9" State="Closed" >
+			<Loot Money="1000"></Loot>
+		</Container>
+		<Container Sprite="Locker" X="6" Y="9" State="Closed" >
+			<Loot Money="500"></Loot>
+		</Container>
+		<Container Sprite="Locker" X="7" Y="9" State="Closed" />
+		<Container Sprite="Locker" X="8" Y="9" State="Closed" />
+		<Container Sprite="Locker" X="9" Y="9" State="Closed" /> 
+		<!-- Next Row Down -->
+		<Container Sprite="Locker" X="1" Y="6" State="Closed" />
+		<Container Sprite="Locker" X="2" Y="6" State="Closed" />
+		<Container Sprite="Locker" X="3" Y="6" State="Closed" />
+		<Container Sprite="Locker" X="7" Y="6" State="Closed" />
+		<Container Sprite="File Cabinet" X="8" Y="6" State="Closed" />
+		<Container Sprite="Locker" X="9" Y="6" State="Closed" /> 
+		<!-- Next Row Down -->
+		<Container Sprite="Locker" X="1" Y="3" State="Closed" />
+		<Container Sprite="Locker" X="2" Y="3" State="Closed" />
+		<Container Sprite="Locker" X="3" Y="3" State="Closed" />
+		<Container Sprite="Locker" X="7" Y="3" State="Closed" />
+		<Container Sprite="Locker" X="8" Y="3" State="Closed" />
+		<Container Sprite="Locker" X="9" Y="3" State="Closed" />
+	</Containers>
+  </Fixtures>
+</Area>

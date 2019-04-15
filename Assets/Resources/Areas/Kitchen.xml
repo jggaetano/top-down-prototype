@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Area Place="Kitchen" Width="11" Height="11">
+  <Tiles>
+	<Tile Type="Ground" Walkable="True" />
+	<!-- South Row -->
+	<Tile Type="Empty"  Row="0" Walkable="False" />
+	<Tile Type="Water"  Fill="Row" Row="1" Start="1" End="9" Walkable="False" />
+	<Tile Type="Ground" Fill="Row" Row="1" Start="2" End="3" Walkable="True" /> 
+	<Tile Type="Ground" Fill="Row" Row="0" Start="2" End="3" Walkable="True" />
+	<Tile Type="Ground" Fill="Row" Row="1" Start="5" End="6" Walkable="True" /> 
+	<Tile Type="Ground" Fill="Row" Row="0" Start="5" End="6" Walkable="True" />
+	<!-- West Wall -->
+	<Tile Type="Empty" Column="0" Walkable="False" />
+	<Tile Type="Water" Fill="Column" Column="1" Start="1" End="9" Walkable="False" />
+	<!-- North Wall -->
+	<Tile Type="Empty" Row="10" Walkable="False" />
+	<Tile Type="Water" Fill="Row" Row="9" Start="1" End="9" Walkable="False" />
+	<!-- East Wall -->
+	<Tile Type="Empty" Column="10" Walkable="False" />
+	<Tile Type="Water" Fill="Column" Column="9" Start="1" End="9" Walkable="False" />
+  </Tiles>
+  <Characters>
+	<NPCs>
+		<NPC Name="Donny" Sprite="Chef" X="5" Y="5" >
+			<Moves MovementTimer="0" CurrentMove="0" >
+			  <Move Direction="STOP" Time="6" />
+			  <Move Direction="EAST" Time="2" />
+			  <Move Direction="STOP" Time="6" />
+			  <Move Direction="WEST" Time="2" />
+			  <Move Direction="STOP" Time="6" />
+			  <Move Direction="WEST" Time="2" />
+			  <Move Direction="STOP" Time="6" />
+			  <Move Direction="EAST" Time="2" />
+			</Moves> 
+			<Dialog> 
+				<Text>I am the toppest chef!</Text>
+				<Text>Have a sushi!</Text>				
+			</Dialog>
+		</NPC>
+	</NPCs> 
+  </Characters>
+  <Fixtures>
+	<Doors>
+		<Door ID="0" Type="EXIT" Sprite="NONE" X="2" Y="0" LinkToArea="Lobby" LinkToDoor="4" ExitX="2.5" ExitY="1" />
+		<Door ID="1" Type="EXIT" Sprite="NONE" X="3" Y="0" LinkToArea="Lobby" LinkToDoor="4" ExitX="2.5" ExitY="1" />
+		<Door ID="2" Type="EXIT" Sprite="NONE" X="5" Y="0" LinkToArea="Lobby" LinkToDoor="5" ExitX="5.5" ExitY="1" />
+		<Door ID="3" Type="EXIT" Sprite="NONE" X="6" Y="0" LinkToArea="Lobby" LinkToDoor="5" ExitX="5.5" ExitY="1" />
+	</Doors>
+  </Fixtures>
+</Area>

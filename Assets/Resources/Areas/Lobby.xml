@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Area Place="Lobby" Width="40" Height="20">
+  <Tiles>
+	<Tile Type="Empty" Walkable="True" />
+	<!--<Tile Type="Water" X="20" Y="12" Walkable="False" />
+	<Tile Type="Water" X="20" Y="13" Walkable="False" />
+	<Tile Type="Water" X="21" Y="12" Walkable="False" />
+	<Tile Type="Water" X="21" Y="13" Walkable="False" /> -->
+	<Tile Type="Empty" Row="0" Walkable="False" />
+	<Tile Type="Empty" Row="19" Walkable="False" />
+	<Tile Type="Empty" Column="0" Walkable="False" />
+	<Tile Type="Empty" Column="39" Walkable="False" />
+  </Tiles>
+  <Characters>
+	<NPCs>
+		<NPC Name="Kain" Sprite="Hero" X="15" Y="10" > 
+			<Moves MovementTimer="0" CurrentMove="0" >
+			  <Move Direction="EAST" Time="2" />
+			  <Move Direction="NORTH" Time="2" />
+			  <Move Direction="WEST" Time="2" />
+			  <Move Direction="SOUTH" Time="2" />
+			</Moves>
+			<Dialog> 
+				<Text>I AM KAIN!</Text>
+			</Dialog>
+		</NPC>
+		<NPC Name="Pierre" Sprite="Chef" X="25" Y="10"> 
+			<Moves MovementTimer="0" CurrentMove="0" >
+			  <Move Direction="EAST" Time="3" />
+			  <Move Direction="NONE" Time="0" />
+			  <Move Direction="STOP" Time="3" />
+			  <Move Direction="NORTH" Time="1.5" />
+			  <Move Direction="SOUTH" Time="1.5" />
+			  <Move Direction="EAST" Time="2" />
+			  <Move Direction="WEST" Time="2" />
+			  <Move Direction="NONE" Time="0" />
+			  <Move Direction="STOP" Time="3" />
+			  <Move Direction="WEST" Time="3" />
+			</Moves>
+			<Dialog>
+				<Text>I am Pierre</Text>
+			</Dialog>
+		</NPC>
+		<NPC Name="Tony" Sprite="Chef" X="25" Y="5">
+			<Moves MovementTimer="0" CurrentMove="0" >
+			  <Move Direction="NORTH" Time="3" />
+			  <Move Direction="STOP" Time="1.5" />
+			  <Move Direction="SOUTH" Time="3" />
+			  <Move Direction="STOP" Time="1.5" />
+			</Moves>
+			<Dialog>
+				<Text>I am Tony</Text>
+			</Dialog>
+		</NPC>
+		<NPC Name="Donny" Sprite="Chef" X="15" Y="5" >
+			<Dialog> 
+				<Text>I cannot move!</Text>
+				<Text>Help me...</Text>
+				<Text>Watch me dance.</Text>
+			</Dialog>
+		</NPC>
+		<NPC Name="Ashley" Sprite="Hero" X="17" Y="5" >
+			<Moves MovementTimer="0" CurrentMove="0">
+			  <Move Direction="WEST" Time="6" />
+			  <Move Direction="EAST" Time="6" />
+			</Moves>
+		</NPC>
+	</NPCs> 
+  </Characters>
+  <Fixtures>
+	<Doors>
+		<Door ID="0" Type="SINGLE" Action="NONE"     Sprite="Wood" X="1" Y="16"  LinkToArea="Locker Room" LinkToDoor="0" State="Closed" ExitX="2"    ExitY="15" Sensor="False" />
+		<Door ID="1" Type="SINGLE" Action="SWINGING" Sprite="Wood" X="4" Y="16"  LinkToArea="Locker Room" LinkToDoor="1" State="Closed" ExitX="5"    ExitY="15" Sensor="False" />
+		<Door ID="2" Type="SINGLE" Action="SLIDING"  Sprite="Wood" X="7" Y="16"  LinkToArea="Locker Room" LinkToDoor="2" State="Closed" ExitX="8"    ExitY="15" Sensor="False" />
+		<Door ID="3" Type="DOUBLE" Action="NONE" 	 Sprite="Wood" X="10" Y="16" LinkToArea="Locker Room" LinkToDoor="3" State="Closed" ExitX="11.5" ExitY="15" Sensor="False" />
+		<Door ID="4" Type="DOUBLE" Action="SWINGING" Sprite="Wood" X="14" Y="16" LinkToArea="Kitchen"     LinkToDoor="0" State="Closed" ExitX="15.5" ExitY="15" Sensor="False" />
+		<Door ID="5" Type="DOUBLE" Action="SLIDING"  Sprite="Glass" X="18" Y="16" LinkToArea="Kitchen"     LinkToDoor="2" State="Closed" ExitX="19.5" ExitY="15" Sensor="True" />
+	</Doors>
+  </Fixtures>
+</Area>
